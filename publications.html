@@ -5,401 +5,633 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="robots" content="all">
-    <meta name="description" content="Shilin He">
-    <meta name="keywords" content="Shilin He, Software Engineering, Log Analysis, AIOps, Cloud">
+    <meta name="description" content="Shilin He's Homepage">
+    <meta name="keywords" content="Shilin He, LLM, Agent, AI4SE, AI Coding">
     <meta name="author" content="Shilin He">
     <link rel="icon" href="media/imgs/icon.png" type="image/x-icon"/>
-    <title>Shilin He@Microsoft</title>
+    <title>Shilin He | Publication</title>
+    
+    <!-- Fonts --> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap core CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href="style/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    
+    <!-- Custom CSS -->
     <link href="style/style.css" rel="stylesheet">
-	
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111008986-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-111008986-1');
-    </script>
+    
+    <!-- All styles are now inline -->
+    
+    <!-- <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navigation */
+        .nav-container {
+            background-color: #f5f5f5;
+            padding: 15px 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-links a {
+            color: #444;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: 500;
+        }
+        
+        .nav-links a:first-child {
+            font-weight: 600;
+        }
+        
+        /* Header */
+        .header-container {
+            background-color: #2c4060;
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .profile-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        
+        .profile-info h2 {
+            margin: 0 0 25px 0;
+            font-weight: 400;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-links {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .email-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
+            background-size: contain;
+            display: inline-block;
+        }
+        
+        .github-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z'/%3E%3C/svg%3E");
+            background-size: contain;
+            display: inline-block;
+        }
+        
+        .scholar-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z'/%3E%3C/svg%3E");
+            background-size: contain;
+            display: inline-block;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Publications */
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: block !important;
+            visibility: visible !important;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+        
+        .section-header h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+            color: #333;
+        }
+        
+        .view-all {
+            color: #666;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .view-all:hover {
+            text-decoration: underline;
+        }
+        
+        .pub-entry {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .pub-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .pub-badge {
+            display: inline-block;
+            background-color: #5a6ec0;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 16px;
+            border-radius: 30px;
+            margin-bottom: 12px;
+        }
+        
+        .arxiv-badge {
+            background-color: #7d56c2;
+        }
+        
+        .pub-title {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        
+        .pub-title:hover {
+            color: #2c4060;
+            text-decoration: underline;
+        }
+        
+        .pub-authors {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .highlight {
+            color: #2c4060;
+            font-weight: 700;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #f5f5f5;
+            color: #666;
+            font-size: 14px;
+        }
+    </style> -->
 </head>
 
 <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html#home">Home</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html#about">About</a>
-                    </li>
-                    <li><a href="">Publications</a>
-                    </li>
-                    <li><a href="index.html#work">Experiences</a>
-                    </li>
-                    <!-- <li><a href="index.html#teaching">Teaching</a> -->
-                    <!-- </li> -->
-                    <!-- <li><a href="#talks">Talks</a>
-                    </li> -->
-                    <li><a href="index.html#services">Services</a>
-                    </li>
-                    <!--li><a href="media/imgs/cv.pdf">CV</a>
-                    </li-->
-                </ul>
-            </div>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="index.html#work">Experiences</a>
+            <a href="index.html#services">Services</a>
         </div>
-    </nav>
-    <div class="container main">
-        <a class="anchor" id="home"></a>
-        <a class="anchor" id="about"></a>
-        <div class="about">
-            <img src="media/imgs/profile.png" width="250px" style="float:right; margin-left:20px; margin-right:30px">
-            <h2>Shilin He （何世林）</h2>
-            <p><br>
-                Senior Researcher, Microsoft Research<br>
-            </p>
-            <!-- <p>Advisor: <a href="https://www.cse.cuhk.edu.hk/lyu/">Prof. Michael R. Lyu</a></p>	 -->
-            <p class="m">Contact Info:</p>
-            <p>
-                Email: shilin.he@microsoft.com <br>
-                <a href="https://github.com/shilinhe"><img src="media/imgs/github.jpg"
-                        width="25px">&nbsp;Github</a>&nbsp;&nbsp;&nbsp;
-                <!-- <a href="https://github.com/shilinhe">Github</a>&nbsp;|&nbsp; -->
-                <a href="https://scholar.google.com.hk/citations?user=wECvv2UAAAAJ&hl=en"><img
-                        src="media/imgs/google_scholar.png" width="20px">&nbsp;Google Scholar</a>&nbsp;&nbsp;&nbsp;
-                <!-- <a href="">Linkedin</a>&nbsp;				 -->
-            </p>
-    
-            <p style="clear:both">&nbsp;</p>
-            <p class="m">Introduction:</p>
-            <p>
-                I am now a Senior researcher in the DKI group at Microsoft. My recent focuses are LLM and its applications, including Agents, RAG, etc. Before that, I worked on AIOps and machine translation. 
-            </p>    
-            <p>
-                I joined Microsoft Research Asia in 2020. Prior to that, I received my Ph.D. degree from the Chinese University of Hong Kong (CUHK) in 2020, under the supervision of <a
-                href="https://www.cse.cuhk.edu.hk/lyu/">Prof. Michael R. Lyu</a>. 
-            </p>
-            <p>
-                I am the maintainer of <a href="https://github.com/microsoft/TaskWeaver">TaskWeaver</a>, a code-first agent framework designed for reliable planning and code execution.
-                I am also the maintainer of <a href="https://github.com/logpai">LogPAI</a> project, one of the most comprehensive open-source projects in the AIOps area.
-            </p>
-            <!-- My research topics are:
-            <ul>
-                <li>Deep Learning: Understanding and Interpretability</li>
-                <li>NLP: Neural Machine Translation</li>
-                <li>AI Ops: Log Analysis</li>
-            </ul> -->
-            <!-- <p>
-                I am the maintainer of <a href="https://github.com/logpai">LogPAI</a> project, which provides an end-to-end solution
-                to intelligently manage and analyze logs for modern software systems using machine learning techniques. So far, the
-                project has received <b>3000+</b> stars and <b>800+</b> forks and the datasets <a
-                    href="https://zenodo.org/record/3227177#.XmcOSS2B0xh">Loghub</a> have been downloaded for more than <b>80000</b>
-                times by <b>370+</b> organizations. Feel free to contact us if you have any questions.
-            </p> -->
-    
-            <!-- <p> <img src="media/imgs/new.gif"> I will be available on the Job market, feel free to contact me~
-                </p> -->
-        </div>
-        <br>	
-        <p style="clear:both">&nbsp;</p>		
-        <a class="anchor" id="publications"></a>
-        <div>
-            <h3>All Publications</h3>
-            <h4 class="l">For recent publications, please refer to my <a href="https://scholar.google.com.hk/citations?user=wECvv2UAAAAJ&hl=en">Google Scholar</a></h4>
-	    <p>
-                <span class="pub_title">Towards Lightweight, Model-Agnostic and Diversity-Aware Active Anomaly Detection</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors">Xu Zhang, Yuan Zhao, Ziang Cui, Liqun Li, <u class="m">Shilin He</u>, Qingwei Lin, Yingnong Dang, Saravan Rajmohan, Dongmei Zhang</span>
-                <br/>
-                <span class="pub_type">ICLR 2023 </span>
-                <br /><br />
-            </p>
-	    <p>
-                <span class="pub_title">CONAN: Diagnosing Batch Failures for Cloud Systems</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors">Liqun Li, Xu Zhang, <u class="m">Shilin He</u>, Yu Kang, Hongyu Zhang, Minghua Ma, Yingnong Dang, Zhangwei Xu, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang</span>
-                <br/>
-                <span class="pub_type">ICSE-SEIP 2023 </span>
-                <br /><br />
-            </p>
-	    <p>
-                <span class="pub_title">Did We Miss Something Important? Studying and Exploring Variable-Aware Log Abstraction</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors">Zhenhao Li, Chuan Luo, Tse-Hsun (Peter) Chen, Weiyi Shang, <u class="m">Shilin He</u>, Qingwei Lin, Dongmei Zhang</span>
-                <br/>
-                <span class="pub_type">ICSE 2023 </span>
-                <br /><br />
-            </p>
-	    <p>
-                <span class="pub_title">Incident-aware Duplicate Ticket Aggregation for Cloud Systems</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors">Jinyang Liu, <u class="m">Shilin He</u>, Zhuangbin Chen, Liqun Li, Yu Kang, Xu Zhang, Pinjia He, Hongyu Zhang, Qingwei Lin, Zhangwei Xu, Saravan Rajmohan, Dongmei Zhang, Michael R Lyu</span>
-                <br/>
-                <span class="pub_type">ICSE 2023 </span>
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">An Empirical Study of Log Analysis at Microsoft</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors"><u class="m">Shilin He</u>, Xu Zhang, Pinjia He, Yong Xu, Liqun Li, Yu Kang, Minghua Ma, Yining Wei, Yingnong Dang, Saravan Rajmohan, Qingwei Lin</span>
-                <br/>
-                <span class="pub_type">ESEC/FSE 2022 </span>
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">An Empirical Investigation of Missing Data Handling in Cloud Node Failure Prediction</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors"> Minghua Ma, Yudong Liu, Yuang Tong, Haozhe Li, Pu Zhao, Yong Xu, Hongyu Zhang, <u class="m">Shilin He</u>, Lu Wang, Yingnong Dang, Saravan Rajmohan, Qingwei Lin</span>
-                <br/>
-                <span class="pub_type">ESEC/FSE 2022 </span>
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">SPINE: A Scalable Log Parser with Feedback Guidance</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors">Xuheng Wang, Xu Zhang, Liqun Li, <u class="m">Shilin He</u>, Hongyu Zhang, Yudong Liu, Lingling Zheng, Yu Kang, Qingwei Lin, Yingnong Dang, Saravan Rajmohan, Dongmei Zhang</span>
-                <br/>
-                <span class="pub_type">ESEC/FSE 2022 </span>
-                <strong><font color="#990000">Distinguished Paper Award</font></strong>
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">XLM-D: Decorate Cross-lingual Pre-training Model as Non-Autoregressive Neural Machine Translation</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors">Yong Wang, Shilin He, Guanhua Chen, Yun Chen, Daxin Jiang</span>
-                <br/>
-                <span class="pub_type">EMNLP 2022 </span>
-                <br /><br />
-            </p>
-           
-            <p>
-                <span class="pub_title">UniParser: A Unified Log Parser for Heterogeneous Log Data</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors">Yudong Liu, Xu Zhang, <u class="m">Shilin He</u>, Hongyu Zhang, Liqun Li, Yu Kang, Yong Xu, Minghua Ma, Qingwei Lin, Yingnong Dang, Saravan Rajmohan, Dongmei Zhang</span>
-                <br/>
-                <span class="pub_type">The Web Conference (WWW 2022) </span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">Exploiting Inactive Examples for Natural Language Generation with Data Rejuvenation</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors">Wenxiang Jiao, Xing Wang, <u class="m">Shilin He</u>, Zhaopeng Tu, Irwin King, Michael R Lyu</span>
-                <br />
-                <span class="pub_type">IEEE/ACM Transactions on Audio, Speech, and Language Processing 2022</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">Fighting the Fog of War: Automated Incident Detection for Cloud Systems</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors">Liqun Li, Xu Zhang, Xin Zhao, Hongyu Zhang, Yu Kang, Pu Zhao, Bo Qiao, <u
-                        class="m">Shilin He</u>, Pochian Lee, Jeffrey Sun, Feng Gao, Li Yang, Qingwei Lin, Saravanakumar Rajmohan, Zhangwei Xu, Dongmei Zhang</span>
-                <br />
-                <span class="pub_type">2021 USENIX Annual Technical Conference (USENIX ATC 2021)</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">
-                <span class="pub_title">Onion: Identifying Incident-indicating Logs for Cloud Systems</span>
-                <span class="pub_downloads"><a href="">[PDF]</a>&nbsp;<a href="">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors">Xu Zhang, Yong Xu, Si Qin, <u class="m">Shilin He</u>, Bo Qiao, Ze Li,
-                    Hongyu Zhang, Xukun Li, Yingnong Dang, Qingwei Lin, Murali
-                    Chintalapati, Saravanakumar Rajmohan, Dongmei Zhang</span>
-                <br />
-                <span class="pub_type">ESEC/FSE 2021 Industry Track</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-	        <p>
-                <span class="pub_title">Multi-Task Learning with Shared Encoder for Non-Autoregressive Machine Translation</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/2010.12868">[arXiv]</a>&nbsp;<a
-                        href="">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors">Yongchang Hao, <u class="m">Shilin He</u>, Wenxiang Jiao, Zhaopeng Tu, Michael Lyu, Xing Wang</span>
-                <br />
-                <span class="pub_type">NAACL 2021</span>
-                <br /><br />
-            </p>
-            <p>
-                <span class="pub_title">A Survey on Automated Log Analysis for Reliability Engineering</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/2009.07237">[arXiv]</a>&nbsp;<a
-                        href="media/bib/he_arxiv20_log_survey.html">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors"><u class="m">Shilin He</u>, Pinjia He, Zhuangbin Chen, Tianyi Yang, Yuxin Su, Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">ACM Computing Survey 2021</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-
-            <p>
-                <span class="pub_title">Loghub: A Large Collection of System Log Datasets towards Automated Log Analytics</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/2008.06448">[arXiv]</a>&nbsp;<a
-                        href="media/bib/he_arxiv20_loghub.html">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors"><u class="m">Shilin He</u>, Jieming Zhu, Pinjia He, Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">Arxiv 2020</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-
-            <p>
-                <span class="pub_title">Data Rejuvenation: Exploiting Inactive Training Examples for Neural Machine Translation</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/2010.02552">[arXiv]</a>&nbsp;<a
-                        href="">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors">Wenxiang Jiao, Xing Wang, <u class="m">Shilin He</u>, Irwin King, Michael R. Lyu, Zhaopeng Tu</span>
-                <br />
-                <span class="pub_type">EMNLP 2020</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-
-            
-            <p>
-                <span class="pub_title">Assessing the Bilingual Knowledge Learned by Neural Machine Translation Models</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/2004.13270">[arXiv]</a>&nbsp;<a
-                        href="media/bib/he_arxiv20_assessing.html">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors"><u class="m">Shilin He</u>, Xing Wang, Shuming Shi, Michael R. Lyu, Zhaopeng Tu</span>
-                <br />
-                <span class="pub_type">Arxiv 2020</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br /><br />
-            </p>
-
-
-            <p>
-                <span class="pub_title">Towards Understanding Neural Machine Translation with Word Importance</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/1909.00326">[arXiv]</a>&nbsp;<a href="media/bib/he_emnlp19.html">[BibTex]</a></span>
-                <br/>
-                <span class="pub_authors"><u class="m">Shilin He</u>, Zhaopeng Tu, Xing Wang, Longyue Wang, Michael R. Lyu, Shuming Shi</span>
-                <br />
-                <span class="pub_type">In Proceedings of the Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing (<a href="https://www.emnlp-ijcnlp2019.org">EMNLP 2019</a>), Hong Kong, Nov 3 - 7, 2019</span>
-                <!-- <b><font color="#990000">(Top AI Conference)</font></b> -->
-                <br/><br/>
-            </p>
-            <!-- <p style="clear:both">&nbsp;</p> -->
-
-
-            <p>
-                <!-- <img src="media/imgs/xxx.png" width="300px" style="float:left; margin-right:10px"> -->
-                <span class="pub_title">Logzip: Extracting Hidden Structures via Iterative Clustering for Execution Log Compression</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/1910.00409">[arXiv]</a>&nbsp;<a href="https://github.com/logpai/logzip">[Code]</a>&nbsp;<a href="media/bib/liu_ase19.html">[BibTex]</a></span-->
-                <br />
-                <span class="pub_authors">Jinyang Liu, Jieming Zhu, <u class="m">Shilin He</u>, Pinjia He, Zibin Zheng, Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">In Proceedings of the The 34th IEEE/ACM International Conference on Automated Software Engineering (<a href="https://2019.ase-conferences.org">ASE 2019</a>), San Diego, United States, Nov 11 - 15, 2019</span>
-                <!-- <b><font color="#990000">(CCF-A)</font></b> -->
-                <br /><br/>
-            </p>
-            <p>
-                <!-- <img src="media/imgs/xxx.png" width="300px" style="float:left; margin-right:10px"> -->
-                <span class="pub_title">Tools and Benchmarks for Automated Log Parsing</span>
-                <span class="pub_downloads"><a href="https://arxiv.org/abs/1811.03509 ">[arXiv]</a>&nbsp;<a href="https://github.com/logpai/logparser">[Code]</a>&nbsp;<a href="media/bib/zhu_icse19.html">[BibTex]</a></span>
-                <br />
-                <span class="pub_authors">Jieming Zhu, <u class="m">Shilin He</u>, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">In Proceedings of the 41st International Conference on Software Engineering: Software Engineering in Practice (<a href="https://2019.icse-conferences.org">ICSE 2019</a>), Montréal, QC, Canada, May 25 - 31, 2019</span>
-                <br /><br/>
-            </p>
-            <p>
-                <!-- <img src="media/imgs/xxx.png" width="300px" style="float:left; margin-right:10px"> -->
-                <span class="pub_title">Identifying Impactful Service System Problems via Log Analysis</span>
-                <span class="pub_downloads"><a href="media/papers/fse18.pdf">[PDF]</a>&nbsp;<a href="https://github.com/logpai/Log3C">[Code]</a>&nbsp;<a href="media/bib/he_fse18.html">[BibTex]</a></span-->
-                <br />
-                <span class="pub_authors"> <u class="m">Shilin He</u>, Qingwei Lin, Jian-Guang Lou, Hongyu Zhang, Michael R. Lyu, Dongmei Zhang</span>
-                <br />
-                <span class="pub_type">In Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering(<a href="https://2018.fseconference.org">ESEC/FSE 2018</a>), Lake Buena Vista, FL, USA, Nov 4 - 9, 2018 </span>
-                <!-- <b><font color="#990000">(CCF-A)</font></b> -->
-                <br /><br/>
-            </p>
-            <!-- <p style="clear:both">&nbsp;</p> -->
-
-            <p>
-                <!-- <img src="media/imgs/xxx.png" width="300px" style="float:left; margin-right:10px"> -->
-                <span class="pub_title">Characterizing the natural language descriptions in software logging statements</span>
-                <span class="pub_downloads"><a href="media/papers/ase18.pdf">[PDF]</a>&nbsp;<a href="https://github.com/logpai/LoggingDescriptions">[Code]</a>&nbsp;<a href="media/bib/pinjia_ase18.html">[BibTex]</a></span-->
-                <br />
-                <span class="pub_authors">Pinjia He, Zhuangbin Chen, <u class="m">Shilin He</u>, Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering (<a href="https://2018.ase-conferences.org">ASE 2018</a>), Montpellier, France, Sept 03 - 07, 2018</span>
-                <!-- <b><font color="#990000">(CCF-A)</font></b> -->
-                <br /><br/>
-            </p>
-
-            <p>
-                <!-- <img src="media/imgs/xxx.png" width="300px" style="float:left; margin-right:10px"> -->
-                <span class="pub_title">Towards Automated Log Parsing for Large-scale Log Data Analysis [Journal]</span>
-                <span class="pub_downloads"><a href="media/papers/tdsc17.pdf">[PDF]</a>&nbsp;<a href="media/bib/pinjia_tdsc17.html">[BibTex]</a></span-->
-                <br />
-                <span class="pub_authors">Pinjia He, Jieming Zhu, <u class="m">Shilin He</u>, Jian Li, Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">IEEE Transactions on Dependable and Secure Computing (TDSC) (Volume: 15, Issue: 6, Nov.-Dec. 1, 2018)</span>
-                <!-- <b><font color="#990000">(CCF-A)</font></b> -->
-                <br /><br/>
-            </p>
-
-            <p>
-                <!-- <img src="media/imgs/xxx.png" width="300px" style="float:left; margin-right:10px"> -->
-                <span class="pub_title">Experience Report: System Log Analysis for Anomaly Detection</span>
-                <span class="pub_downloads"><a href="media/papers/issre16.pdf">[PDF]</a>&nbsp;<a href="https://github.com/logpai/loglizer">[Code]</a>&nbsp;<a href="media/bib/he_issre16.html">[BibTex]</a></span-->
-                <br />
-                <span class="pub_authors"><u class="m">Shilin He</u>, Jieming Zhu, Pinjia He, Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">In Proceedings of 2016 IEEE 27th International Symposium on Software Reliability Engineering (<a href="http://2016.issre.net">ISSRE 2016</a>), Ottawa, Canada, Oct 23-27, 2016</span><br/>
-
-                <strong><font color="#990000">Selected as <i>Most Influential Papers of 30 Years of ISSRE</i>&nbsp;&nbsp;&nbsp;<a href="http://2019.issre.net/node/77">[Link]</a></font></strong>
-                <br/><br/>
-            </p>
-
-            <p>
-                <!-- <img src="media/imgs/xxx.png" width="300px" style="float:left; margin-right:10px"> -->
-                <span class="pub_title">An Evaluation Study on Log Parsing and its Use in Log Mining</span>
-                <span class="pub_downloads"><a href="media/papers/dsn16.pdf">[PDF]</a>&nbsp;<a href="https://github.com/logpai/logparser">[Code]</a>&nbsp;<a href="media/bib/pinjia_dsn16.html">[BibTex]</a></span-->
-                <br />
-                <span class="pub_authors">Pinjia He, Jieming Zhu, <u class="m">Shilin He</u>,  Michael R. Lyu</span>
-                <br />
-                <span class="pub_type">In Proceedings of 2016 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (<a href="https://dsn-2016.sciencesconf.org">DSN 2016</a>), Toulouse, France, Jun 28 - Jul 1, 2016</span><br/>
-                <br/><br/>
-            </p>
-
-            
-        </div>
-		
-        <!-- ********************** foot **********************-->
-        <p style="clear:both">&nbsp;</p>
-        <footer>
-            @2021 Shilin He's Personal Website. All rights reserved.
-        </footer>
     </div>
+    
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-content">
+            <div class="profile-info">
+                <h1>Shilin He （何世林）</h1>
+                <div class="contact-links">
+                    <a>
+                        <span class="email-icon"></span>
+                        <span class="email">heshilin [at] bytedance [dot] com</span>
+                    </a>
+                    <a href="https://github.com/shilinhe">
+                        <span class="github-icon"></span>
+                        Github
+                    </a>
+                    <a href="https://scholar.google.com.hk/citations?user=wECvv2UAAAAJ&hl=en">
+                        <span class="scholar-icon"></span>
+                        Google Scholar
+                    </a>
+                </div>
+            </div>
+            <div class="profile-img">
+                <img src="media/imgs/profile.png" alt="Shilin He">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Publications -->
+    <div class="main-container" id="publications">
+        <div class="section-header">
+            <h3>Selected Publications</h3>
+            <a href="https://scholar.google.com.hk/citations?user=wECvv2UAAAAJ&hl=en" class="view-all">View all publications on Google Scholar »</a>
+        </div>
+
+    <p># denotes correponding author<br>* denotes work from interns under my supervision</p>
+    <div class="pub-entry">
+        <div class="pub-badge arxiv-badge">arXiv 2025</div>
+        <a   class="pub-title">
+            SWE-bench Goes Live!
+        </a>
+        <div class="pub-authors">Linghao Zhang, <span class="highlight">Shilin He</span>#, Chaoyun Zhang, Yu Kang, Bowen Li, Chengxing Xie, Junhao Wang, Maoquan Wang, Yufan Huang, Shengyu Fu, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ACL 2025</div>
+        <a   class="pub-title">
+            DI-BENCH: Benchmarking Large Language Models on Dependency Inference with Testable Repositories at Scale
+        </a>
+        <div class="pub-authors">Linghao Zhang, Junhao Wang, <span class="highlight">Shilin He</span>#, Chaoyun Zhang, Yu Kang, Bowen Li, Jiaheng Wen, Chengxing Xie, Maoquan Wang, Yufan Huang, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge arxiv-badge">arXiv 2025</div>
+        <a   class="pub-title">
+            Ufo2: The desktop agentos
+        </a>
+        <div class="pub-authors">Chaoyun Zhang, He Huang, Chiming Ni, Jian Mu, Si Qin, <span class="highlight">Shilin He</span>, Lu Wang, Fangkai Yang, Pu Zhao, Chao Du, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICLR 2025</div>
+        <a   class="pub-title">
+            OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?
+        </a>
+        <div class="pub-authors">Junjielong Xu, Qinan Zhang, Zhiqing Zhong, <span class="highlight">Shilin He</span>#, Chaoyun Zhang, Qingwei Lin, Dan Pei, Pinjia He, Dongmei Zhang, Qi Zhang</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">NAACL 2025</div>
+        <a   class="pub-title">
+            UFO: A UI-focused Agent for Windows OS Interaction
+        </a>
+        <div class="pub-authors">Chaoyun Zhang, Liqun Li, <span class="highlight">Shilin He</span>, Xu Zhang, Bo Qiao, Si Qin, Minghua Ma, Yu Kang, Qingwei Lin, Saravan Rajmohan, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICSE 2025</div>
+        <a   class="pub-title">
+            An Empirical Study on Package-Level Deprecation in Python Ecosystem
+        </a>
+        <div class="pub-authors">Zhiqing Zhong, <span class="highlight">Shilin He</span>#, Haoxuan Wang, Boxi Yu, Haowen Yang, Pinjia He</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICDE 2025</div>
+        <a   class="pub-title">
+            AllHands: Ask Me Anything on Large-scale Verbatim Feedback via Large Language Models
+        </a>
+        <div class="pub-authors">Chaoyun Zhang, Zicheng Ma, Yuhao Wu, <span class="highlight">Shilin He</span>*, Si Qin, Minghua Ma, Xiaoting Qin, Yu Kang, Yuyi Liang, Xiaoyu Gou, Yajie Xue, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge arxiv-badge">arXiv 2024</div>
+        <a   class="pub-title">
+            Large Action Models: From Inception to Implementation
+        </a>
+        <div class="pub-authors">Lu Wang, Fangkai Yang, Chaoyun Zhang, Junting Lu, Jiaxu Qian, <span class="highlight">Shilin He</span>, Pu Zhao, Bo Qiao, Ray Huang, Si Qin, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">TMLR 2024</div>
+        <a   class="pub-title">
+            Large language model-brained gui agents: A survey
+        </a>
+        <div class="pub-authors">Chaoyun Zhang, <span class="highlight">Shilin He</span>#, Jiaxu Qian, Bowen Li, Liqun Li, Si Qin, Yu Kang, Minghua Ma, Guyue Liu, Qingwei Lin, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICSE 2024</div>
+        <a   class="pub-title">
+            UniLog: Automatic Logging via LLM and In-Context Learning
+        </a>
+        <div class="pub-authors">Junjielong Xu, Ziang Cui, Yuan Zhao, Xu Zhang, <span class="highlight">Shilin He</span>*, Pinjia He, Liqun Li, Yu Kang, Qingwei Lin, Yingnong Dang, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICSE 2024</div>
+        <a   class="pub-title">
+            Xpert: Empowering Incident Management with Query Recommendations via Large Language Models
+        </a>
+        <div class="pub-authors">Yuxuan Jiang, Chaoyun Zhang, <span class="highlight">Shilin He</span>*, Zhihao Yang, Minghua Ma, Si Qin, Yu Kang, Yingnong Dang, Saravan Rajmohan, Qingwei Lin, et al.</div>
+    </div>
+
+    <!-- <div class="pub-entry">
+        <div class="pub-badge">VLDB 2024</div>
+        <a   class="pub-title">
+            Imdiffusion: Imputed diffusion models for multivariate time series anomaly detection
+        </a>
+        <div class="pub-authors">Yuhang Chen, Chaoyun Zhang, Minghua Ma, Yudong Liu, Ruomeng Ding, Bowen Li, <span class="highlight">Shilin He</span>, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang</div>
+    </div> -->
+
+    <div class="pub-entry">
+        <div class="pub-badge">Technical Report 2023</div>
+        <a   class="pub-title">
+            Taskweaver: A Code-First Agent Framework
+        </a>
+        <div class="pub-authors">Bo Qiao, Liqun Li, Xu Zhang, <span class="highlight">Shilin He</span>, Yu Kang, Chaoyun Zhang, Fangkai Yang, Hang Dong, Jue Zhang, Lu Wang, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ISSRE 2023</div>
+        <a   class="pub-title">
+            Loghub: A large collection of system log datasets for ai-driven log analytics
+        </a>
+        <div class="pub-authors">Jieming Zhu, <span class="highlight">Shilin He</span>, Pinjia He, Jinyang Liu, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ISSTA 2023</div>
+        <a   class="pub-title">
+            ROME: Testing Image Captioning Systems via Recursive Object Melting
+        </a>
+        <div class="pub-authors">Boxi Yu, Zhiqing Zhong, Jiaqi Li, Yixing Yang, <span class="highlight">Shilin He</span>, Pinjia He</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICSE 2023</div>
+        <a   class="pub-title">
+            Incident-aware Duplicate Ticket Aggregation for Cloud Systems
+        </a>
+        <div class="pub-authors">Jinyang Liu, <span class="highlight">Shilin He</span>*, Zhuangbin Chen, Liqun Li, Yu Kang, Xu Zhang, Pinjia He, Hongyu Zhang, Qingwei Lin, Zhangwei Xu, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICSE 2023</div>
+        <a   class="pub-title">
+            Did We Miss Something Important? Studying and Exploring Variable-Aware Log Abstraction
+        </a>
+        <div class="pub-authors">Zhenhao Li, Chuan Luo, Tse-Hsun Peter Chen, Weiyi Shang, <span class="highlight">Shilin He</span>, Qingwei Lin, Dongmei Zhang</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICSE 2023</div>
+        <a   class="pub-title">
+            Conan: Diagnosing batch failures for cloud systems
+        </a>
+        <div class="pub-authors">Liqun Li, Xu Zhang, <span class="highlight">Shilin He</span>, Yu Kang, Hongyu Zhang, Minghua Ma, Yingnong Dang, Zhangwei Xu, Saravan Rajmohan, Qingwei Lin, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ESEC/FSE 2023</div>
+        <a   class="pub-title">
+            STEAM: Observability-Preserving Trace Sampling
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Botao Feng, Liqun Li, Xu Zhang, Yu Kang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang</div>
+    </div>
+
+    <!-- <div class="pub-entry">
+        <div class="pub-badge">ESEC/FSE 2023</div>
+        <a   class="pub-title">
+            Assess and Summarize: Improve Outage Understanding with Large Language Models
+        </a>
+        <div class="pub-authors">Pengxiang Jin, Shenglin Zhang, Minghua Ma, Haozhe Li, Yu Kang, Liqun Li, Yudong Liu, Bo Qiao, Chaoyun Zhang, Pu Zhao, et al.</div>
+    </div> -->
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICLR 2023</div>
+        <a  class="pub-title">
+            Towards Lightweight, Model-Agnostic and Diversity-Aware Active Anomaly Detection
+        </a>
+        <div class="pub-authors">Xu Zhang, Yuan Zhao, Ziang Cui, Liqun Li, <span class="highlight">Shilin He</span>, Qingwei Lin, Yingnong Dang, Saravan Rajmohan, Dongmei Zhang</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">EMNLP 2022</div>
+        <a   class="pub-title">
+            XLM-D: Decorate Cross-lingual Pre-training Model as Non-Autoregressive Neural Machine Translation
+        </a>
+        <div class="pub-authors">Yong Wang, <span class="highlight">Shilin He</span>, Guanhua Chen, Yun Chen, Daxin Jiang</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ESEC/FSE 2022</div>
+        <a   class="pub-title">
+            SPINE: A Scalable Log Parser with Feedback Guidance
+        </a>
+        <div class="pub-authors">Xuheng Wang, Xu Zhang, Liqun Li, <span class="highlight">Shilin He</span>, Hongyu Zhang, Yudong Liu, Lingling Zheng, Yu Kang, Qingwei Lin, Yingnong Dang, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ESEC/FSE 2022</div>
+        <a   class="pub-title">
+            An Empirical Study of Log Analysis at Microsoft
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Xu Zhang, Pinjia He, Yong Xu, Liqun Li, Yu Kang, Minghua Ma, Yining Wei, Yingnong Dang, Saravanakumar Rajmohan, et al.</div>
+    </div>
+
+    <!-- <div class="pub-entry">
+        <div class="pub-badge">ESEC/FSE 2022</div>
+        <a   class="pub-title">
+            An Empirical Investigation of Missing Data Handling in Cloud Node Failure Prediction
+        </a>
+        <div class="pub-authors">Minghua Ma, Yudong Liu, Yuang Tong, Haozhe Li, Pu Zhao, Yong Xu, Hongyu Zhang, <span class="highlight">Shilin He</span>, Lu Wang, Yingnong Dang, et al.</div>
+    </div> -->
+
+    <div class="pub-entry">
+        <div class="pub-badge">TASLP 2022</div>
+        <a   class="pub-title">
+            Exploiting Inactive Examples for Natural Language Generation with Data Rejuvenation
+        </a>
+        <div class="pub-authors">Wenxiang Jiao, Xing Wang, <span class="highlight">Shilin He</span>, Zhaopeng Tu, Irwin King, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">WWW 2022</div>
+        <a   class="pub-title">
+            UniParser: A Unified Log Parser for Heterogeneous Log Data
+        </a>
+        <div class="pub-authors">Yudong Liu, Xu Zhang, <span class="highlight">Shilin He</span>, Hongyu Zhang, Liqun Li, Yu Kang, Yong Xu, Minghua Ma, Qingwei Lin, Yingnong Dang, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ACM SIGOPS 2022</div>
+        <a   class="pub-title">
+            An intelligent framework for timely, accurate, and comprehensive cloud incident detection
+        </a>
+        <div class="pub-authors">Yichen Li, Xu Zhang, <span class="highlight">Shilin He</span>*, Zhuangbin Chen, Yu Kang, Jinyang Liu, Liqun Li, Yingnong Dang, Feng Gao, Zhangwei Xu, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ESEC/FSE 2021</div>
+        <a   class="pub-title">
+            Onion: identifying incident-indicating logs for cloud systems
+        </a>
+        <div class="pub-authors">Xu Zhang, Yong Xu, Si Qin, <span class="highlight">Shilin He</span>, Bo Qiao, Ze Li, Hongyu Zhang, Xukun Li, Yingnong Dang, Qingwei Lin, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ACM Computing Surveys 2021</div>
+        <a   class="pub-title">
+            A Survey on Automated Log Analysis for Reliability Engineering
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Pinjia He, Zhuangbin Chen, Tianyi Yang, Yuxin Su, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">USENIX ATC 2021</div>
+        <a   class="pub-title">
+            Fighting the Fog of War: Automated Incident Detection for Cloud Systems
+        </a>
+        <div class="pub-authors">Liqun Li, Xu Zhang, Xin Zhao, Pu Zhao, Bo Qiao, <span class="highlight">Shilin He</span>, Pochian Lee, Jeffrey Sun, Feng Gao, Li Yang, et al.</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">NAACL 2021</div>
+        <a   class="pub-title">
+            Multi-Task Learning with Shared Encoder for Non-Autoregressive Machine Translation
+        </a>
+        <div class="pub-authors">Yongchang Hao, <span class="highlight">Shilin He</span>, Wenxiang Jiao, Zhaopeng Tu, Michael Lyu, Xing Wang</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge arxiv-badge">arXiv 2020</div>
+        <a   class="pub-title">
+            Loghub: A large collection of system log datasets towards automated log analytics
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Jieming Zhu, Pinjia He, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">EMNLP 2020</div>
+        <a   class="pub-title">
+            Data Rejuvenation: Exploiting Inactive Training Examples for Neural Machine Translation
+        </a>
+        <div class="pub-authors">Wenxiang Jiao, Xing Wang, <span class="highlight">Shilin He</span>, Irwin King, Michael R Lyu, Zhaopeng Tu</div>
+    </div>
+
+    <!-- <div class="pub-entry">
+        <div class="pub-badge arxiv-badge">arXiv 2020</div>
+        <a   class="pub-title">
+            Assessing the bilingual knowledge learned by neural machine translation models
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Xing Wang, Shuming Shi, Michael R Lyu, Zhaopeng Tu</div>
+    </div> -->
+
+    <div class="pub-entry">
+        <div class="pub-badge">ASE 2019</div>
+        <a   class="pub-title">
+            Logzip: Extracting Hidden Structures via Iterative Clustering for Log Compression
+        </a>
+        <div class="pub-authors">Jinyang Liu, Jieming Zhu, <span class="highlight">Shilin He</span>, Pinjia He, Zibin Zheng, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ICSE 2019</div>
+        <a   class="pub-title">
+            Tools and benchmarks for automated log parsing
+        </a>
+        <div class="pub-authors">Jieming Zhu, <span class="highlight">Shilin He</span>, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">EMNLP 2019</div>
+        <a   class="pub-title">
+            Towards Understanding Neural Machine Translation with Word Importance
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Zhaopeng Tu, Xing Wang, Longyue Wang, Michael R Lyu, Shuming Shi</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ASE 2018</div>
+        <a   class="pub-title">
+            Characterizing the natural language descriptions in software logging statements
+        </a>
+        <div class="pub-authors">Pinjia He, Zhuangbin Chen, <span class="highlight">Shilin He</span>, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ESEC/FSE 2018</div>
+        <a   class="pub-title">
+            Identifying impactful service system problems via log analysis
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Qingwei Lin, Jian-Guang Lou, Hongyu Zhang, Michael R Lyu, Dongmei Zhang</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">IEEE TDSC 2017</div>
+        <a   class="pub-title">
+            Towards automated log parsing for large-scale log data analysis
+        </a>
+        <div class="pub-authors">Pinjia He, Jieming Zhu, <span class="highlight">Shilin He</span>, Jian Li, Michael R Lyu</div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-badge">ISSRE 2016</div>
+        <a   class="pub-title">
+            Experience report: system log analysis for anomaly detection
+        </a>
+        <div class="pub-authors"><span class="highlight">Shilin He</span>, Jieming Zhu, Pinjia He, Michael R Lyu</div>
+    </div>
+
+    <!-- <div class="pub-entry">
+        <div class="pub-badge">DSN 2016</div>
+        <a   class="pub-title">
+            An evaluation study on log parsing and its use in log mining
+        </a>
+        <div class="pub-authors">Pinjia He, Jieming Zhu, <span class="highlight">Shilin He</span>, Jian Li, Michael R Lyu</div>
+    </div> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            &copy; 2025 Shilin He's Personal Website. All rights reserved.
+        </div>
+    </footer>
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

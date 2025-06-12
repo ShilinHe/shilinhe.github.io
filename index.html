@@ -5,25 +5,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="robots" content="all">
-    <meta name="description" content="Shilin He">
-    <meta name="keywords" content="Shilin He, Software Engineering, Log Analysis, AIOps, Cloud">
+    <meta name="description" content="Shilin He's Homepage">
+    <meta name="keywords" content="Shilin He, LLM, Agent, AI4SE, AI Coding">
     <meta name="author" content="Shilin He">
-    <link rel="icon" href="media/imgs/icon.png" type="image/x-icon" />
-    <title>Shilin He@Microsoft</title>
+    <link rel="icon" href="media/imgs/icon.png" type="image/x-icon"/>
+    <title>Shilin He's Homepage</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap core CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href="style/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="style/style.css" rel="stylesheet">
+    
+    <!-- All styles are now inline -->
+     <link href="style/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111008986-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -32,285 +28,499 @@
 
         gtag('config', 'UA-111008986-1');
     </script>
+    
+    <!-- <style>
+         body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navigation */
+        .nav-container {
+            background-color: #f5f5f5;
+            padding: 15px 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-links a {
+            color: #444;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: 500;
+        }
+        
+        .nav-links a:first-child {
+            font-weight: 600;
+        }
+        
+        /* Header */
+        .header-container {
+            background-color: #2c4060;
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .profile-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        
+        .profile-info h2 {
+            margin: 0 0 25px 0;
+            font-weight: 400;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-links {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .email-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
+            background-size: contain;
+            display: inline-block;
+        }
+        
+        .github-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z'/%3E%3C/svg%3E");
+            background-size: contain;
+            display: inline-block;
+        }
+        
+        .scholar-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z'/%3E%3C/svg%3E");
+            background-size: contain;
+            display: inline-block;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Publications */
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 20px;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+        
+        .section-header h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+            color: #333;
+        }
+        
+        .view-all {
+            color: #666;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .view-all:hover {
+            text-decoration: underline;
+        }
+        
+        .pub-entry {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .pub-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .pub-badge {
+            display: inline-block;
+            background-color: #5a6ec0;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 16px;
+            border-radius: 30px;
+            margin-bottom: 12px;
+        }
+        
+        .arxiv-badge {
+            background-color: #7d56c2;
+        }
+        
+        .pub-title {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        
+        .pub-title:hover {
+            color: #2c4060;
+            text-decoration: underline;
+        }
+        
+        .pub-authors {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .highlight {
+            color: #2c4060;
+            font-weight: 700;
+        }
+        
+        /* Section Styling */
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .main-container h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2c4060;
+            margin-top: 0;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+            position: relative;
+        }
+        
+        .main-container h3::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background-color: #2c4060;
+        }
+        
+        /* About Section */
+        #about p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        
+        #about a {
+            color: #2c4060;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        #about a:hover {
+            color: #5a6ec0;
+            text-decoration: underline;
+        }
+        
+        /* News Section */
+        .main-container ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+        
+        .main-container ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .main-container ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .main-container ul li img {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        /* Work Experience */
+        #work table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        #work .table_date {
+            width: 180px;
+            color: #666;
+            font-weight: 500;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-align: right;
+            padding-right: 25px;
+        }
+        
+        #work .table_desc {
+            padding-left: 15px;
+            vertical-align: middle;
+        }
+        
+        #work .table_desc p {
+            margin: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        #work tr {
+            height: 60px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        #work tr:last-child {
+            border-bottom: none;
+        }
+        
+        /* Students, Services, and Work Experience */
+        #students ul li, #services ul li, #work ul li {
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+            border-left: 3px solid #2c4060;
+        }
+        
+        #students ul li:hover, #services ul li:hover, #work ul li:hover {
+            background-color: #f0f4f8;
+            transform: translateX(5px);
+        }
+        
+        /* Hong Kong Image */
+        .image-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .image-caption {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        /* Footer and Map */
+        .map-container {
+            display: flex;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto 30px;
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #f5f5f5;
+            color: #666;
+            font-size: 14px;
+        } 
+    </style> -->
 </head>
 
 <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#home">Home</a>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="index.html#work">Experiences</a>
+            <a href="index.html#services">Services</a>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-content">
+            <div class="profile-info">
+                <h1>Shilin He （何世林）</h1>
+                <div class="contact-links">
+                    <a>
+                        <span class="email-icon"></span>
+                        <span class="email">heshilin [at] bytedance [dot] com</span>
+                    </a>
+                    <a href="https://github.com/shilinhe">
+                        <span class="github-icon"></span>
+                        Github
+                    </a>
+                    <a href="https://scholar.google.com.hk/citations?user=wECvv2UAAAAJ&hl=en">
+                        <span class="scholar-icon"></span>
+                        Google Scholar
+                    </a>
+                </div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#about">About</a>
-                    </li>
-                    <li><a href="publications.html">Publications</a>
-                    </li>
-                    <li><a href="#work">Experiences</a>
-                    </li>
-                    <!-- <li><a href="#teaching">Teaching</a> -->
-                    <!-- </li> -->
-                    <!-- <li><a href="#talks">Talks</a>
-                    </li> -->
-                    <li><a href="#services">Services</a>
-                    </li>
-                    <!--li><a href="media/imgs/cv.pdf">CV</a>
-                    </li-->
-                </ul>
+            <div class="profile-img">
+                <img src="media/imgs/profile.png" alt="Shilin He">
             </div>
         </div>
-    </nav>
-    <div class="container main">
-        <a class="anchor" id="home"></a>
-        <a class="anchor" id="about"></a>
-        <div class="about">
-            <img src="media/imgs/profile.png" width="250px" style="float:right; margin-left:20px; margin-right:30px">
-            <h2>Shilin He （何世林）</h2>
-            <p><br>
-                Senior Researcher, Microsoft<br>
-            </p>
-            <!-- <p>Advisor: <a href="https://www.cse.cuhk.edu.hk/lyu/">Prof. Michael R. Lyu</a></p>	 -->
-            <p class="m">Contact Info:</p>
+    </div>
+
+    <div class="main-container" id="about">
+            <h3>About</h3>
             <p>
-                Email: shilin.he@microsoft.com <br>
-                <a href="https://github.com/shilinhe"><img src="media/imgs/github.jpg"
-                        width="25px">&nbsp;Github</a>&nbsp;&nbsp;&nbsp;
-                <!-- <a href="https://github.com/shilinhe">Github</a>&nbsp;|&nbsp; -->
-                <a href="https://scholar.google.com.hk/citations?user=wECvv2UAAAAJ&hl=en"><img
-                        src="media/imgs/google_scholar.png" width="20px">&nbsp;Google Scholar</a>&nbsp;&nbsp;&nbsp;
-                <!-- <a href="">Linkedin</a>&nbsp;				 -->
+                Shilin He is now an Applied Scientist in Bytedance Douyin, working on AI4SE and AI Coding. Prior to that, He was a Senior Researcher in the DKI group @ Microsoft Research Asia (MSRA) during 2020-2025. He received the Ph.D. degree from the Chinese University of Hong Kong (CUHK) under the supervision of <a
+                    href="https://www.cse.cuhk.edu.hk/lyu/">Prof. Michael R. Lyu</a> in 2020. He is the program committee member of top-tier conferences like FSE and ISSTA, and reviewer of conferences and journals such as ACL, EMNLP, FSE, TSE, TOSEM. 
             </p>
-
-            <p style="clear:both">&nbsp;</p>
-            <p class="m">About:</p>
-            <p>
-                I am now a Senior researcher in the DKI group at Microsoft. My recent focuses are LLM and its
-                applications, including Agents, RAG, etc. Before that, I worked on AIOps and machine translation.
+             <p>
+                Notice: I am actively looking for self-motivated students (Undergraduate, Master, or Ph.D. Students) to join my team for internship. Please drop me an email if you are interested.
             </p>
-            <p>
-                I joined Microsoft Research Asia in 2020. Prior to that, I received my Ph.D. degree from the Chinese
-                University of Hong Kong (CUHK) in 2020, under the supervision of <a
-                    href="https://www.cse.cuhk.edu.hk/lyu/">Prof. Michael R. Lyu</a>.
-            </p>
-            <p>
-                I am the maintainer of <a href="https://github.com/microsoft/TaskWeaver">TaskWeaver</a>, a code-first
-                agent framework designed for reliable planning and code execution.
-                I am also the maintainer of <a href="https://github.com/logpai">LogPAI</a> project, one of the most
-                comprehensive open-source projects in the AIOps area.
-            </p>
-            <!-- My research topics are:
-            <ul>
-                <li>Deep Learning: Understanding and Interpretability</li>
-                <li>NLP: Neural Machine Translation</li>
-                <li>AI Ops: Log Analysis</li>
-            </ul> -->
-            <!-- <p>
-               I am the maintainer of <a href="https://github.com/logpai">LogPAI</a> project, which provides an end-to-end solution to intelligently manage and analyze logs for modern software systems using machine learning techniques. So far, the project has received <b>3000+</b> stars and <b>800+</b> forks and the datasets <a href="https://zenodo.org/record/3227177#.XmcOSS2B0xh">Loghub</a> have been downloaded for more than <b>80000</b> times by <b>370+</b> organizations.
-            </p> -->
+    </div>
+    <div class="main-container">
+        <h3>News</h3>
+        <ul>
+            <li><img src="media/imgs/new.gif"> Apr-2025: Our paper "UFO2: The Desktop AgentOS" is available on arXiv.</li>
+            <li><img src="media/imgs/new.gif"> Mar-2025: Our paper "API Agents vs. GUI Agents: Divergence and Convergence" is available on arXiv.</li>
+            <li><img src="media/imgs/new.gif"> Feb-2025: Our papers "OpenRCA" and "UFO" have been accepted to ICLR and NAACL 2025.</li>
+            <li><img src="media/imgs/new.gif"> Jan-2025: Our paper "DI-BENCH" on LLM benchmarking is available on arXiv.</li>
+            <li><img src="media/imgs/new.gif"> Jan-2024: We released TaskWeaver on GitHub, which has received over 4k stars.</li>
+        </ul>
+    </div>
+    <div class="main-container" >
+        <h3>Selected Projects</h3>
+        <ul>
+            <li><strong><a href="https://github.com/microsoft/SWE-bench-Live">SWE-bench-Live</a></strong>: A live benchmark for issue resolving that goes beyond SWE-bench.</li>
+            <li><strong><a href="https://github.com/microsoft/UFO">UFO</a></strong>: A desktop agent OS based on Windows, open-sourced on GitHub with 7400 stars.</li>
+            <li><strong><a href="https://github.com/microsoft/TaskWeaver">TaskWeaver</a></strong>: A multi-agent framework designed for reliable planning and code execution, open-sourced on GitHub with 5800 stars.</li>
+        </ul>
+    </div>
 
-            <!-- <p> <img src="media/imgs/new.gif"> I will be available on the Job market, feel free to contact me~
-            </p> -->
-        </div>
-
-        <a class="anchor" id="news"></a>
-        <div>
-            <h3>News</h3>
-            <ul>
-                <li><img src="media/imgs/new.gif"> Jan-2024: We released TaskWeaver on GitHub, which has received over
-                    4k stars.</li>
-                <li><img src="media/imgs/new.gif"> Oct-2022: Our paper on Log Parsing (SPINE: A Scalable Log Parser with
-                    Feedback Guidance) is selected as a Distinguished Paper.</li>
-                <!-- <li><img src="media/imgs/new.gif"> Oct-2022: Three papers are accepted by ESEC/FSE 2022.</li>  -->
-                <!-- <li><img src="media/imgs/new.gif"> Apr-2021: Our survey paper on Log Analysis is accepted by ACM Computing Survey (CSUR).</li> -->
-                <!-- <li><img src="media/imgs/new.gif"> Mar-2021: We are hiring FTEs and interns (research/backend/frontend), please drop me an email with your resume if you are interested!</li> -->
-                <!-- <li><img src="media/imgs/new.gif"> Oct-2020: I will join Microsoft Research Asia as a researcher. Collaborations will be welcomed~~</li> -->
-                <!-- <li><img src="media/imgs/new.gif"> Sep-2020: I have passed the Ph.D. oral defense. Great thanks to my supervisor and all thesis committee members!</li> -->
-                <!-- <li><img src="media/imgs/new.gif"> Nov-2019: I receive the <i>honorable metion award</i> of 2019 MSRA Ph.D. Fellowship <a href="https://www.msra.cn/zh-cn/connections/academic-programs/fellows">[Link]</a>. -->
-                <!-- <li><img src="media/imgs/new.gif"> Nov-2019: Our ISSRE 2016 paper is selected as the 30-years <b><i>Most Influential Papers</i></b>! (26 out of 1074 papers)</li> -->
-                <!-- <li><img src="media/imgs/new.gif"> Aug-2019: Our paper on interpreting neural machine translation models is accepted by EMNLP 2019!</li> -->
-                <!-- </ul> -->
-        </div>
-
-        <p style="clear:both">&nbsp;</p>
-        <a class="anchor" id="publications"></a>
-        <div>
-            <h3>Publication</h3>
-            Please see the complete list of publications <a href="publications.html#publications"><span
-                    class="pub_title">
-                    <font color="#13227a">here</font>
-                </span></a>.
-        </div>
+    <div class="main-container">
+        <h3>Publication</h3>
+        Please see the complete list of publications <a href="publications.html"><span
+                class="pub_title">
+                <font color="#13227a">here</font>
+            </span></a>.
+    </div>
 
 
-        <p style="clear:both">&nbsp;</p>
-        <a class="anchor" id="work"></a>
-        <div>
-            <h3>Work Experience</h3>
-            <br />
-            <table border="0">
-                <tr class="table_item">
-                    <td class="table_date">Nov 20 - Present</td>
-                    <td class="table_desc">
-                        <p>Researcher @ MSRA, Data, Knowledge and Intelligence (DKI) Group</p>
-                        <p>
-                    </td>
-                </tr>
-                <tr class="table_item">
-                    <td class="table_date">Nov 2018 - Jun 2020</td>
-                    <td class="table_desc">
-                        <p>Research Intern @ Tencent AI Lab, NLP Group</p>
-                    </td>
-                </tr>
-                <tr class="table_item">
-                    <td class="table_date">May 2017 - Sept 2017</td>
-                    <td class="table_desc">
-                        <p>Research Intern @ MSRA, Software Analytics Group</p>
-                    </td>
-                </tr>
-                
-            </table>
-        </div>
+    <div class="main-container" id="work">
+        <h3>Experience</h3>
+        <ul>
+            <li><strong>2025 - Present: </strong>&nbsp;&nbsp;Applied Scientist @ Bytedance </li>
+            <li><strong>2020 - 2025: </strong>&nbsp;&nbsp;Senior Researcher @ MSRA, DKI Group</li>
+            <li><strong>2018 - 2019: </strong>&nbsp;&nbsp;Research Intern @ Tencent AI Lab, NLP Group</li>
+            <li><strong>2017 - 2017: </strong>&nbsp;&nbsp;Research Intern @ MSRA, Software Analytics Group</li>
+        </ul>
+        <h4>Education</h4>
+        <ul>
+            <li><strong>2016 - 2020: </strong>&nbsp;&nbsp;Ph.D., the Chinese University of Hong Kong (CUHK)</li>
+            <li><strong>2012 - 2016: </strong>&nbsp;&nbsp;Bachelor, South China University of Technology</li>
+        </ul>
+    </div>
 
-        <!-- ********************** teaching **********************-->
-        <p style="clear:both">&nbsp;</p>
-        <!-- <div id="teaching">
-            <h3>Teaching Experience</h3>
-            <br />
-            <table border="0">
-                <tr>
-                    <td class="table_date">Fall 2016</td>
-                    <td class="table_desc">ELEG4201 - CMOS Integrated Circuits</td>
-                </tr>
-                <tr>
-                    <td class="table_date">Spring 2017</td>
-                    <td class="table_desc">CSCI3100 - Software Engineering</td>
-                </tr>
-                <tr>
-                    <td class="table_date">Fall 2017</td>
-                    <td class="table_desc">ENGG2020 - Digital Logic and Systems</td>
-                </tr>
-                <tr>
-                    <td class="table_date">Spring 2018</td>
-                    <td class="table_desc">CSCI3100 - Software Engineering</td>
-                </tr>
-                <tr>
-                    <td class="table_date">Fall 2018</td>
-                    <td class="table_desc">ENGG1110 - Problem Solving by Programming</td>
-                </tr>
-                <tr>
-                    <td class="table_date">Spring 2019</td>
-                    <td class="table_desc">CSCI3100 - Software Engineering</td>
-                </tr>
-                <tr>
-                    <td class="table_date">Fall 2019</td>
-                    <td class="table_desc">ENGG1110 - Problem Solving by Programming</td>
-                </tr>
-            </table>
-        </div> -->
-
-        <!-- ********************** talks **********************-->
-        <!-- <p style="clear:both">&nbsp;</p>
-        <a class="anchor" id="talks"></a>
-        <div>
-            <h3>Talks and Presentations</h3>
-            <br />
-            <table border="0">
-            	  <tr>
-                    <td class="table_date">Sept 2016</td>
-                    <td class="table_title">XXXXXX</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td class="table_desc">XXX University</td>
-                </tr>
-            </table>
-        </div> -->
 
         <!-- ********************** services **********************-->
-        <p style="clear:both">&nbsp;</p>
-        <a class="anchor" id="services"></a>
-        <div>
-            <h3>Services</h3>
-            <ul>
-                <li>Program Committee in FSE 2025 Research Track </li>
-                <li>Program Committee in ISSTA 2025 Research Track </li>
-                <li>Program Committee in APSEC 2024 SEIP Track </li>
-                <li>Program Committee in ISSTA 2024 Research Track</li>
-                <li>Program Committee in ESEC/FSE 2024 IVR Track</li>
-                <li>Invited Speaker in ISEC 2024</li>
-                <li>Reviewer at EMSE 2024</li>
-                <li>Reviewer at TOSEM 2024</li>
-                <li>Reviewer at The VLDB Journal 2024</li>
-                <li>Reviewer at TSE 2023</li>
-                <li>Reviewer at Transactions on Storage 2023</li>
-                <li>Reviewer at TSE, CSUR, TOSEM 2022</li>
-                <li>Reviewer at TSE, CSUR, TDSC, TOSEM 2021</li>
-                <li>Reviewer at TSE, CSUR, EMNLP, ACL, DSN 2020</li>
-                <li>...</li>
-            </ul>
-        </div>  
-            
-            
-            
-            
-            
-
-
-
-            <!-- <table border="0">
-                <tr>
-                    <td class="table_date">2022</td>
-                    <td class="table_desc">TSE, CSUR, TOSEM, FSE, ICSE</td>
-                </tr>
-                <tr>
-                    <td class="table_date">2021</td>
-                    <td class="table_desc">TSE, CSUR, TDSC, TOSEM </td>
-                </tr>
-                <tr>
-                    <td class="table_date">2020</td>
-                    <td class="table_desc">TSE, CSUR, EMNLP, ACL, AAAI, IJCAI, FSE, DSN </td>
-                </tr>
-                <tr>
-                    <td class="table_date">2019</td>
-                    <td class="table_desc">TKDE, NIPS, ICML, EMNLP, NAACL, FSE, DSN</td>
-                </tr>
-                <tr>
-                    <td class="table_date">2018</td>
-                    <td class="table_desc">NIPS, IJCAI, DSN</td>
-                </tr>
-                <tr>
-                    <td class="table_date">2017</td>
-                    <td class="table_desc">ISSRE, ICDCS</td>
-                </tr> 
-            </table> --> 
-
-
-        <p style="clear:both">&nbsp;</p>
-
-        <div>
-            <img src="media/imgs/hongkong.jpg" width="100%" style="">
-            <div style='text-align: center;'>Victoria Harbour, Hong Kong, China</div>
-        </div>
-
-        <!-- ********************** foot **********************-->
-        <p style="clear:both">&nbsp;</p>
-        <p>
-            <center>
-                <div>
-                    <script type="text/javascript" id="clustrmaps"
-                        src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=355&t=tt&d=E2ZHWMV6A1mcQODnXFpquf4l6cp_ycqMX5uLFcwLlpI"></script>
-                </div>
-
-                <footer>
-                    @2022 Shilin He's Personal Website. All rights reserved.
-                </footer>
+       
+    <div class="main-container" id="services">
+        <h3>Services</h3>
+        <ul>
+            <li><strong>Program Committee Member:</strong>&nbsp;&nbsp;FSE 2025,  ISSTA 2025, APSEC 2024, ISSTA 2024, ESEC/FSE 2024</li>
+            <li><strong>Invited Speaker:</strong>&nbsp;&nbsp;ISEC 2024</li>
+            <li><strong>Reviewer:</strong> &nbsp;&nbsp;ICLR, ICML, EMNLP, ACL, EMSE, TOSEM, CSUR, VLDB, TSE, DSN, etc</li>
+        </ul>
     </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+
+
+    <div class="main-container">
+        <div class="image-container">
+            <img src="media/imgs/hongkong.jpg" alt="Victoria Harbour, Hong Kong">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="map-container">
+       <script type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=427&t=tt&d=E2ZHWMV6A1mcQODnXFpquf4l6cp_ycqMX5uLFcwLlpI'></script>    </div>
+    
+    <footer>
+        @2025 Shilin He's Personal Website. All rights reserved.
+    </footer>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
