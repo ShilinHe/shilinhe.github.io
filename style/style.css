@@ -6,12 +6,42 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Improved Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1.5rem;
 }
 
 /* Navigation */
 .nav-container {
     background-color: #f5f5f5;
     padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -26,6 +56,27 @@ body {
     text-decoration: none;
     margin-right: 30px;
     font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2c4060;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #2c4060;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-links a:first-child {
@@ -34,9 +85,10 @@ body {
 
 /* Header */
 .header-container {
-    background-color: #2c4060;
+    background: linear-gradient(135deg, #2c4060 0%, #3a5a8c 100%);
     color: white;
     padding: 60px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .header-content {
@@ -73,6 +125,13 @@ body {
     margin-right: 20px;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.contact-links a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 /* Profile Image */
@@ -153,6 +212,13 @@ body {
 .pub-entry {
     padding: 25px 0;
     border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.pub-entry:hover {
+    background-color: #f9f9f9;
+    padding-left: 10px;
+    border-radius: 4px;
 }
 
 .pub-entry:last-child {
@@ -293,6 +359,90 @@ body {
     transform: translateX(5px);
 }
 
+/* Project Links Styling */
+.main-container ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+.main-container ul li a:hover {
+    color: #5a6ec0;
+}
+
+.main-container ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #5a6ec0;
+    transition: width 0.3s ease;
+}
+
+.main-container ul li a:hover::after {
+    width: 100%;
+}
+
+/* Publication Link Styling */
+.publication-link {
+    color: #5a6ec0;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.publication-link:hover {
+    color: #2c4060;
+}
+
+.publication-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #2c4060;
+    transition: width 0.3s ease;
+}
+
+.publication-link:hover::after {
+    width: 100%;
+}
+
+/* View All Publications Link Styling */
+.view-all {
+    color: #5a6ec0;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.view-all:hover {
+    color: #2c4060;
+}
+
+.view-all::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #2c4060;
+    transition: width 0.3s ease;
+}
+
+.view-all:hover::after {
+    width: 100%;
+}
+
 /* Hong Kong Image */
 .image-container {
     border-radius: 8px;
@@ -372,6 +522,16 @@ footer {
     display: inline-block;
 }
 
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.main-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header-content {
@@ -404,4 +564,52 @@ footer {
         font-size: 12px;
         padding: 4px 12px;
     }
+    
+    .main-container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Dark mode support for future implementation */
+@media (prefers-color-scheme: dark) {
+    /* These styles will only apply if the user has dark mode enabled */
+    /* Commented out for now, but ready for future implementation
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    
+    .main-container, .map-container {
+        background-color: #1e1e1e;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    .nav-container, footer {
+        background-color: #1a1a1a;
+    }
+    
+    .nav-links a {
+        color: #e0e0e0;
+    }
+    
+    #about p {
+        color: #c0c0c0;
+    }
+    
+    .pub-title {
+        color: #e0e0e0;
+    }
+    
+    .pub-authors {
+        color: #b0b0b0;
+    }
+    */
 }
